@@ -1,0 +1,20 @@
+<configuration>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+
+        <encoder>
+
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} -%kvp- %msg%n</pattern>
+
+        </encoder>
+
+    </appender>
+
+<!-- TODO:level 나중에 INFO 로 변경해야함-->
+    <root level="INFO">
+
+        <appender-ref ref="STDOUT" />
+
+    </root>
+
+</configuration>
